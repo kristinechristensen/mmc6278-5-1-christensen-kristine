@@ -170,7 +170,7 @@ router
     try {
       const [{affectedRows}] = await db.query(
         `DELETE FROM inventory WHERE id = ?`,
-        req.params.id  //need assistance with this - not sure how this relates - is this the ID of the table inventory id
+        req.params.id  
       )
       if (affectedRows === 0) return res
         .status(404)
