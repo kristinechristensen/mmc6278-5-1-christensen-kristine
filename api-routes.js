@@ -58,7 +58,7 @@ router
       return res
         .status(400)
         .send('Please include all of the following: name, image, description, price, and quantity')
-
+// Ask about bracket / brace usage - confused
     const [newInventory] = await db.query(`
       INSERT INTO inventory (name,image,description,price,quantity)
       VALUES (?,?,?,?,?)
